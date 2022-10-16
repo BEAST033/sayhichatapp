@@ -6,7 +6,7 @@ const messageRouter = require("./routes/messageRoutes");
 const app = express();
 
 var corsOptions = {
-  origin: "http://localhost:3000",
+  origin: "https://cheerful-speculoos-979ad9.netlify.app",
   optionsSuccessStatus: 200,
 };
 
