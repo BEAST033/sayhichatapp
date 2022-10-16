@@ -5,12 +5,13 @@ const messageRouter = require("./routes/messageRoutes");
 
 const app = express();
 
-// app.use(cors());
-app.use(express.json());
+var corsOptions = {
+  origin: "http://localhost:3000",
+  optionsSuccessStatus: 200,
+};
 
-app.get("/", (req, res) => {
-  res.send("shdf");
-});
+app.use(cors(corsOptions));
+app.use(express.json());
 
 app.use("/api/users", userRouter);
 app.use("/api/messages", messageRouter);
