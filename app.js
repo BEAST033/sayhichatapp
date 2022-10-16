@@ -9,7 +9,7 @@ const app = express();
 app.use(express.json());
 
 app.get("/", (req, res) => {
-  res.send("hiiiiii");
+  res.send("shdf");
 });
 
 app.use("/api/users", userRouter);
